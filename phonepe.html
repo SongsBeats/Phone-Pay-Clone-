@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #5f259f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .balance {
+            background-color: #6a30a5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .balance h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s;
+        }
+        .option:hover {
+            transform: scale(1.05);
+        }
+        .option i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #5f259f;
+        }
+        .action-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .action-button {
+            background-color: #5f259f;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+        .action-button:hover {
+            background-color: #6a30a5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PhonePe</h1>
+        </header>
+        <div class="balance">
+            <h2>₹10,000</h2>
+            <p>Available Balance</p>
+        </div>
+        <div class="options">
+            <a href="#" class="option">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Mobile Recharge</span>
+            </a>
+            <a href="#" class="option">
+                <i class="fas fa-bolt"></i>
+                <span>Electricity</span>
+            </a>
+            <a href="#" class="option">
+                <i class="fas fa-tv"></i>
+                <span>DTH</span>
+            </a>
+            <a href="#" class="option">
+                <i class="fas fa-credit-card"></i>
+                <span>Credit Card</span>
+            </a>
+            <a href="#" class="option">
+                <i class="fas fa-gift"></i>
+                <span>Rewards</span>
+            </a>
+            <a href="#" class="option">
+                <i class="fas fa-ellipsis-h"></i>
+                <span>More</span>
+            </a>
+        </div>
+        <div class="action-buttons">
+            <a href="#" class="action-button">Send Money</a>
+            <a href="#" class="action-button">Request Money</a>
+        </div>
+    </div>
+</body>
+</html>
